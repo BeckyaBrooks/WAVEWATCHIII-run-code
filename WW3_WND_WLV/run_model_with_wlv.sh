@@ -7,10 +7,11 @@ forecast=6H
 
 # path to model executables
 # $HOME
+# path to model executables on compute cluster
 PATHEXE="/home/beckyb/projects/def-gemmrich/beckyb/Coastal_ww3/WW3_wlv/WW3/WW3/model/exe"
 # path to boundary and wind files, where there is a directory called bound and wind
 PATHIN="/home/beckyb/projects/def-gemmrich/beckyb/Coastal_ww3/ww3_input"
-# /home/beckyb/projects/def-jklymak/beckyb/RC_ww3/WW3/work/input
+
 module load StdEnv/2023
 module load netcdf-fortran-mpi/4.6.1
 
