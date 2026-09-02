@@ -4,4 +4,5 @@
 3. Python scripts that process the model data and observational datasets
 
 \
+Shell scripts here are based on the code developed by Leah Cicon in the development of the forecast for the NEP. The code was modified to include runs with currents and water levels.
 Shell scripts are used for running WW3, and Python is used for analysis. Code is available for running the model with just winds, with winds and currents, with winds and water levels, and the model with all three. In the directory where the model is running, all files with "write" prefix must be present, along with the model grid file, a list of dates to run the model for, a list of coordinates for point output, and namelists.nml. The model will generate the necessary .nml files in preprocessing, and the mod_def.ww3 for the first time the model is run with a grid. A successful model run will generate a log.ww3, nest.ww3, restart.ww3, wind.ww3, current.ww3, and/or level.ww3 if using currents and/or levels. The log.ww3 file will contain information on what fields were correctly prescribed. 
