@@ -1,3 +1,4 @@
+#!/bin/bash
 # write_prnc.sh: writes ww3_prnc.nml file
 #                input start date and end date of the model
 #                Execute with . write_prnc.sh "$start" "$end"
