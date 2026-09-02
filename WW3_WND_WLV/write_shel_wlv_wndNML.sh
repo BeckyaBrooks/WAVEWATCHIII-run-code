@@ -33,9 +33,9 @@ echo "&OUTPUT_TYPE_NML" >> $fileName
 printf '\tTYPE%%FIELD%%LIST = '"'"'%s'"'"'\n\tTYPE%%POINT%%FILE = '"'"'./points.list'"'"'\n/\n\n' "$params" >> $fileName
 
 echo "&OUTPUT_DATE_NML" >> $fileName
-printf '\tDATE%%FIELD%%START = '"'"'%s'"'"'\n\tDATE%%FIELD%%STRIDE = '"'"'3600'"'"'\n\tDATE%%FIELD%%STOP = '"'"'%s'"'"'\n' "$start" >
-printf '\tDATE%%POINT%%START = '"'"'%s'"'"'\n\tDATE%%POINT%%STRIDE = '"'"'3600'"'"'\n\tDATE%%POINT%%STOP = '"'"'%s'"'"'\n' "$start" >
-printf '\tDATE%%RESTART%%START = '"'"'%s'"'"'\n\tDATE%%RESTART%%STRIDE = '"'"'3600'"'"'\n\tDATE%%RESTART%%STOP = '"'"'%s'"'"'\n/\n\n>
+printf '\tDATE%%FIELD%%START = '"'"'%s'"'"'\n\tDATE%%FIELD%%STRIDE = '"'"'3600'"'"'\n\tDATE%%FIELD%%STOP = '"'"'%s'"'"'\n' "$start" "$end" >> $fileName 
+printf '\tDATE%%POINT%%START = '"'"'%s'"'"'\n\tDATE%%POINT%%STRIDE = '"'"'3600'"'"'\n\tDATE%%POINT%%STOP = '"'"'%s'"'"'\n' "$start" "$end" >> $fileName
+printf '\tDATE%%RESTART%%START = '"'"'%s'"'"'\n\tDATE%%RESTART%%STRIDE = '"'"'3600'"'"'\n\tDATE%%RESTART%%STOP = '"'"'%s'"'"'\n/\n\n "$rstrt_start" "$rstrt_end" >> $fileName
 
 echo "! -------------------------------------------------------------------- !" >> $fileName
 echo "! WAVEWATCH III - end of namelist                                      !" >> $fileName
